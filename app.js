@@ -19,7 +19,7 @@ require("dotenv").config();
 // Create the Express application
 var app = express();
 
-const PORT = 3000 || process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 
